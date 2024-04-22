@@ -15,8 +15,9 @@ $(".restart").click(() => {
   if (start === "false") {
     $("h1").text(`Level ${level}`);
     $(".restart").text(`Restart`);
-    nextSequence();
   }
+  Restart();
+  nextSequence();
   start = "true";
 });
 
